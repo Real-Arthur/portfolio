@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.navBar {
+  background-color: gainsboro;
+}
+
+.about {
+  background-color: bisque;
+}
+

@@ -1,16 +1,22 @@
+
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { Grid, Button, Link } from "@material-ui/core";
 
-
-function Nav(props) {
+function NavRow(props) {
 
   const [heading, setHeading] = useState('Nav');
 
   return (
-    <div>
-      <h2>{heading}</h2>
-    </div>
+    <Grid container direction="row" justify="flex-end" alignItems="stretch">
+      <Grid item>
+        <Link href="/"><Button variant="contained" color="primary">Home Button</Button></Link>
+      </Grid>   
+      <Grid item>
+      <Link href="/resume"><Button variant="contained" color="primary">Resume Button</Button></Link>
+      </Grid>  
+    </Grid>
   );
 }
 
-export default Nav;
+export default NavRow;
