@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Grid, List, ListItem, Typography } from "@material-ui/core";
-import liverpool from "../../Images/liverpool.jpg";
-import mnufc from "../../Images/mnufc.jpg";
-import harrysally from "../../Images/harrysally.jpg";
-import johnwick3 from "../../Images/johnwick3.jpg";
-import pulpfiction from "../../Images/pulpfiction.jpg";
-import burningwhite from "../../Images/burningwhite.jpg";
-import dance from "../../Images/dance.jpg";
-import notw from "../../Images/notw.jpg";
-import wheel13 from "../../Images/wheel13.jpg";
+import liverpool from "../../Media/liverpool.jpg";
+import mnufc from "../../Media/mnufc.jpg";
+import harrysally from "../../Media/harrysally.jpg";
+import johnwick3 from "../../Media/johnwick3.jpg";
+import pulpfiction from "../../Media/pulpfiction.jpg";
+import burningwhite from "../../Media/burningwhite.jpg";
+import dance from "../../Media/dance.jpg";
+import notw from "../../Media/notw.jpg";
+import wheel13 from "../../Media/wheel13.jpg";
 
 import "./About.css"
 

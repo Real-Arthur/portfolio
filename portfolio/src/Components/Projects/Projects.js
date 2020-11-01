@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Grid, Button, Link, Typography, Container, Card } from "@material-ui/core";
-import MovieSagas from "../../Images/MovieSagas.jpg";
+import MovieSagas from "../../Media/MovieSagas.jpg";
+import CastWatch from "../../Media/CastWatch.mp4";
+
 
 function Projects(props) {
 
@@ -18,9 +20,9 @@ function Projects(props) {
             <a target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/movie-sagas">
               <Typography variant="h6">Movie Sagas</Typography>
             </a>
-            <Card>
-          <img className="projectImage" src={MovieSagas} />
-          </Card>
+            
+          <img style={{width: "400px", height: "300px"}} className="projectImage" src={MovieSagas} />
+          
           </Grid>
         </Grid>
       </Grid>
@@ -28,6 +30,9 @@ function Projects(props) {
         <a target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/solo-project">
           <Typography variant="h6">Solo Project: Cast Watch</Typography>
         </a>
+        <video width="400" controls>
+          <source src={CastWatch} type="video/mp4" />
+        </video>
       </Grid>
     </Grid>
   );
