@@ -18,35 +18,45 @@ function About(props) {
   const [heading, setHeading] = useState('About');
 
   return (
-    <Grid id="aboutMe" className="aboutMeArea" container container direction="column" justify="center" alignItems="center">
-      <Grid item>
-        <Typography>A BIT ABOUT ME</Typography>
+    <Grid id="aboutMe" className="aboutMeArea" container direction="column" justify="space-between" alignItems="center">
+      <Grid container direction="row" justify="center">
+        <Grid item>
+          <Typography variant="h2">A BIT ABOUT ME</Typography>
+        <Grid item>
+          <Typography variant="h5">When I'm not scoping, coding, and styling you can find me:</Typography>
+        </Grid>
       </Grid>
-      <Grid item>
-        <Typography>When I'm not scoping, coding, and styling you can find me:</Typography>
       </Grid>
+
+      <Grid container direction="row" justify="space-around">
+      
       <Grid item>
-        <Typography>watching movies</Typography>
+        <Typography variant="h6">Catching A Flick</Typography>
         <img src={harrysally} />
         <img src={johnwick3} />
         <img src={pulpfiction} />
       </Grid>
       <Grid item>
-        <Typography>cheering my favorite soccers teams</Typography>
-        <Typography> Liverpool FC and Minnesota United</Typography>
+        <Typography variant="h6">Cheering my favorite soccers teams</Typography>
+        <Typography variant="h6"> Liverpool FC and Minnesota United</Typography>
         <img src={liverpool} />
         <img src={mnufc} />
       </Grid>
       <Grid item>
-        <Typography>or reading something weird</Typography>
+        <Typography variant="h6">Reading something nerdy</Typography>
         <img src={burningwhite} /> 
         <img src={dance} /> 
         <img src={notw} /> 
         <img src={wheel13} /> 
       </Grid>
-      <Grid item>
-      <Button href="#top" variant="outlined">Back to Top</Button>
       </Grid>
+
+      <Grid container justify="center">
+       <Grid item>
+      <Button href="#top" variant="outlined">Back to Top</Button>
+      </Grid> 
+      </Grid>
+
     </Grid>
   );
 }

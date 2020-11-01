@@ -9,13 +9,13 @@ function NavRow(props) {
   return (
     <Grid className="navArea" container direction="row" justify="flex-end" alignItems="stretch">
       <Grid item>
-        <Link href="/"><Button variant="contained" color="primary">Projects</Button></Link>
+        <Link href="/"><Button variant="outlined" color="primary">Projects</Button></Link>
       </Grid>   
       <Grid item>
-      <Link href="/resume"><Button variant="contained" color="primary">Resume</Button></Link>
+      <Link href="/resume"><Button variant="outlined" color="primary">Resume</Button></Link>
       </Grid>
       <Grid item>
-      <Button href="#aboutMe">About Me</Button>
+      <Button href="#aboutMe" variant="outlined" color="primary">About Me</Button>
       </Grid>
       <NavBio />
     </Grid>
