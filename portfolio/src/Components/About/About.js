@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Grid, List, ListItem, Typography } from "@material-ui/core";
+import { Button, Grid, List, ListItem, Typography } from "@material-ui/core";
 import liverpool from "../../Media/liverpool.jpg";
 import mnufc from "../../Media/mnufc.jpg";
 import harrysally from "../../Media/harrysally.jpg";
@@ -18,7 +18,7 @@ function About(props) {
   const [heading, setHeading] = useState('About');
 
   return (
-    <Grid container container direction="column" justify="center" alignItems="center">
+    <Grid id="aboutMe" className="aboutMeArea" container container direction="column" justify="center" alignItems="center">
       <Grid item>
         <Typography>A BIT ABOUT ME</Typography>
       </Grid>
@@ -43,6 +43,9 @@ function About(props) {
         <img src={dance} /> 
         <img src={notw} /> 
         <img src={wheel13} /> 
+      </Grid>
+      <Grid item>
+      <Button href="#top" variant="outlined">Back to Top</Button>
       </Grid>
     </Grid>
   );

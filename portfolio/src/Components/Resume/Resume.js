@@ -7,7 +7,7 @@ function Resume(props) {
   const [heading, setHeading] = useState('Resume');
 
   return (
-    <Grid container direction="column" justify="center" alignItems="center">
+    <Grid className="mainArea" container direction="column" justify="center" alignItems="center">
       <Grid item>
       <Typography variant="h3">{heading}</Typography>
       </Grid>

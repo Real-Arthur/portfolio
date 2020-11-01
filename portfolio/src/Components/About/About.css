@@ -3,3 +3,21 @@ img {
     width: 100px;
   }
 
+img.me {
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+  opacity: 80%;
+}
+
+.navArea {
+  background-color: #F2CC8F;
+}
+
+.aboutMeArea {
+  background-color: #81B29A;
+}
+
+.mainArea {
+  background-color: #F4F1DE;
+}

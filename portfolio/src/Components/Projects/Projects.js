@@ -10,7 +10,7 @@ function Projects(props) {
   const [heading, setHeading] = useState(`Projects I've Worked On`);
 
   return (
-    <Grid container direction="column" justify="center" alignItems="center">
+    <Grid className="mainArea" container direction="column" justify="center" alignItems="center">
       <Grid item>
         <Typography variant="h5">{heading}</Typography>
       </Grid>
