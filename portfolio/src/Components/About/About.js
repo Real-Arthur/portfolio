@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Grid, List, ListItem, Typography } from "@material-ui/core";
-import liverpool from "./liverpool.jpg";
-import mnufc from "./mnufc.jpg";
-import harrysally from "./harrysally.jpg";
-import johnwick3 from "./johnwick3.jpg";
-import pulpfiction from "./pulpfiction.jpg";
-import burningwhite from "./burningwhite.jpg";
-import dance from "./dance.jpg";
-import notw from "./notw.jpg";
-import wheel13 from "./wheel13.jpg";
+import liverpool from "../../Images/liverpool.jpg";
+import mnufc from "../../Images/mnufc.jpg";
+import harrysally from "../../Images/harrysally.jpg";
+import johnwick3 from "../../Images/johnwick3.jpg";
+import pulpfiction from "../../Images/pulpfiction.jpg";
+import burningwhite from "../../Images/burningwhite.jpg";
+import dance from "../../Images/dance.jpg";
+import notw from "../../Images/notw.jpg";
+import wheel13 from "../../Images/wheel13.jpg";
 
 import "./About.css"
 
@@ -27,12 +27,15 @@ function About(props) {
       </Grid>
       <Grid item>
         <Typography>watching movies</Typography>
-        <img src={harrysally} /><img src={johnwick3} /><img src={pulpfiction} />
+        <img src={harrysally} />
+        <img src={johnwick3} />
+        <img src={pulpfiction} />
       </Grid>
       <Grid item>
         <Typography>cheering my favorite soccers teams</Typography>
         <Typography> Liverpool FC and Minnesota United</Typography>
-        <img src={liverpool} /><img src={mnufc} />
+        <img src={liverpool} />
+        <img src={mnufc} />
       </Grid>
       <Grid item>
         <Typography>or reading something weird</Typography>

@@ -17,11 +17,11 @@ import { Box } from "@material-ui/core";
 
 function App() {
   return (
-    <>
+    <Box>
     <Box className="navBar">
       <NavRow />
     </Box>
-    <Box>
+    <Box className="content">
       <Router>
       <Home />
       </Router>
@@ -29,7 +29,7 @@ function App() {
     <Box className="about">
       <About />
     </Box>
-    </>
+    </Box>
   );
 }
 
