@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Button, Grid, List, ListItem, Typography } from "@material-ui/core";
+import { Button, Grid, List, ListItem, Typography, Card, Paper } from "@material-ui/core";
 import liverpool from "../../Media/liverpool.jpg";
 import mnufc from "../../Media/mnufc.jpg";
 import harrysally from "../../Media/harrysally.jpg";
@@ -19,34 +19,57 @@ function About(props) {
 
   return (
     <Grid id="aboutMe" className="aboutMeArea" container direction="column" justify="space-between" alignItems="center">
+      <hr />
+      <hr />
       <Grid container direction="row" justify="center">
+        <Grid item> 
+          <Typography variant="h2">A BIT ABOUT ME:</Typography>
         <Grid item>
-          <Typography variant="h2">A BIT ABOUT ME</Typography>
-        <Grid item>
-          <Typography variant="h5">When I'm not scoping, coding, and styling you can find me:</Typography>
+          <Typography variant="h5">When I'm not scoping, coding, and styling, you can find me</Typography>
         </Grid>
       </Grid>
       </Grid>
       <hr />
-      <Grid container direction="row" justify="space-around">
+      <Grid container direction="row" justify="space-around" alignItems="flex-end">
       <Grid item>
-        <Typography variant="h6">Catching A Flick</Typography>
-        <img src={harrysally} />
-        <img src={johnwick3} />
-        <img src={pulpfiction} />
+          <Typography variant="h6">
+            Catching A Flick
+          </Typography>
+          <Grid container direction="row" spacing={2}>
+            <Grid item><img src={harrysally} /></Grid>
+            <Grid item><img src={johnwick3} /></Grid>
+            <Grid item><img src={pulpfiction} /></Grid>
+          </Grid>
+          
       </Grid>
       <Grid item>
         <Typography variant="h6">Cheering on my favorite soccers teams</Typography>
         <Typography variant="h6">Liverpool FC and Minnesota United</Typography>
-        <img src={liverpool} />
-        <img src={mnufc} />
+        <Grid container spacing={2}>
+          <Grid item>
+            <img src={liverpool} />
+          </Grid>
+          <Grid item>
+            <img src={mnufc} />
+          </Grid>
+        </Grid>
       </Grid>
       <Grid item>
         <Typography variant="h6">Reading something nerdy</Typography>
-        <img src={burningwhite} /> 
-        <img src={dance} /> 
-        <img src={notw} /> 
-        <img src={wheel13} /> 
+        <Grid container spacing={2}>
+          <Grid item>
+            <img src={burningwhite} /> 
+          </Grid>
+          <Grid item>
+            <img src={dance} /> 
+          </Grid>
+          <Grid item>
+            <img src={notw} />
+          </Grid>
+          <Grid item>
+            <img src={wheel13} />
+          </Grid>
+        </Grid>
       </Grid>
       </Grid>
       <Grid container justify="center">

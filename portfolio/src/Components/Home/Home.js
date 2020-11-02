@@ -11,10 +11,7 @@ import Projects from '../Projects/Projects'
 import { Button, Typography } from '@material-ui/core';
 import resume from "../../Media/ArthurCarsonResume.pdf";
 
-function Home(props) {
-
-  const [heading, setHeading] = useState('Home');
-
+function Home() {
   return (
       <Switch>
       <Route exact path="/">

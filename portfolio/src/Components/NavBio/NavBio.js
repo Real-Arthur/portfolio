@@ -13,9 +13,8 @@ function NavBio(props) {
 
   return (
     <Grid container direction="row" justify="space-around">
-
         <Grid item>
-            <Grid container direction="row" alignItems="flex-end" justify="space-around">
+            <Grid container direction="row" alignItems="center" justify="space-around">
                 <Grid item>
                     <Typography variant="h1">Arthur Carson</Typography>   
                 </Grid> 

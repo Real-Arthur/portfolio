@@ -12,8 +12,7 @@ function Projects() {
     <Grid className="mainArea" container direction="row" justify="space-evenly" alignItems="center">    
       <Grid item>
         <Grid container direction="column">
-          <Grid container direction="column">
-            <Grid item>            
+            <Grid item>       
             <Button variant="outlined" target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/solo-project">
               <Typography variant="h6">Cast Watch<img className="icons" src={gitcat} /></Typography>
             </Button>
@@ -33,7 +32,7 @@ function Projects() {
               <source src={CastWatch} type="video/mp4" />
             </video>
             </Grid>
-          </Grid>
+          
         </Grid>
       </Grid>
       <Grid item>
@@ -45,8 +44,8 @@ function Projects() {
                 <Typography>A movie library that displays a movie poster, title, description, </Typography>
                 <Typography>and a list of genres for movies in a database.</Typography> 
                 <Typography>Allows users to edit and add movies.</Typography>
-                <Typography>Duration: Weekend Project</Typography>
-                <Typography>Technologies: Javascript, React, Redux, Express, Node.js, Material-UI, PostgreSQL</Typography>
+                <Typography variant="subtitle2">Duration: Weekend Project</Typography>
+                <Typography variant="subtitle2">Technologies: Javascript, React, Redux, Express, Node.js, Material-UI, PostgreSQL</Typography>
               <img style={{width: "400px", height: "300px"}} className="projectImage" src={MovieSagas} />
             </Grid>
         <Grid item>
@@ -54,8 +53,8 @@ function Projects() {
           <Typography variant="h6">Feedback Forms<img className="icons" src={gitcat}/></Typography>
         </Button>
         <Typography>A user feedback form</Typography>
-        <Typography>Duration: One Night</Typography>
-        <Typography>Technologies: Javascript, React, Redux, Express, Node.js, PostgreSQL</Typography>
+        <Typography variant="subtitle2">Duration: One Night</Typography>
+        <Typography variant="subtitle2">Technologies: Javascript, React, Redux, Express, Node.js, PostgreSQL</Typography>
         <img style={{width: "400px", height: "300px"}} className="projectImage" src={feedback} />
         </Grid>
       </Grid>
