@@ -8,16 +8,12 @@ import gitcat from "../../Media/gitcat.jpg"
 
 
 function Projects() {
-
   return (
-    <Grid className="mainArea" container direction="row" justify="space-evenly" alignItems="center">
-      
+    <Grid className="mainArea" container direction="row" justify="space-evenly" alignItems="center">    
       <Grid item>
         <Grid container direction="column">
-
           <Grid container direction="column">
-            <Grid item>
-             
+            <Grid item>            
             <Button variant="outlined" target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/solo-project">
               <Typography variant="h6">Cast Watch<img className="icons" src={gitcat} /></Typography>
             </Button>
@@ -28,11 +24,10 @@ function Projects() {
             <Typography>Built accessing a third-party database to scan the cast of a movie</Typography>
             <Typography> and to scan the filmography of an actor/actress.</Typography> 
             <Typography>Comparing that data to a user built personal library to find matches of films and actors/actresses</Typography>
+            <Typography>Duration: Two Weeks</Typography>
             <Typography>Technologies Used: PostgresQL, APIs, Redux.js, Axios,</Typography>
             <Typography> React, Node.js, Material UI, Jquery, Javascript, CSS, HTML</Typography>
-           
             </Grid>
-
             <Grid item>
             <video width="600" controls>
               <source src={CastWatch} type="video/mp4" />
@@ -40,13 +35,9 @@ function Projects() {
             </Grid>
           </Grid>
         </Grid>
-
-
       </Grid>
-
       <Grid item>
         <Grid container direction="column">
-
            <Grid item>
               <Button variant="outlined" target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/movie-sagas">
                 <Typography variant="h6">Movie Gallery<img className="icons" src={gitcat}/></Typography>
@@ -58,7 +49,6 @@ function Projects() {
                 <Typography>Technologies: Javascript, React, Redux, Express, Node.js, Material-UI, PostgreSQL</Typography>
               <img style={{width: "400px", height: "300px"}} className="projectImage" src={MovieSagas} />
             </Grid>
-      
         <Grid item>
         <Button variant="outlined" target="_blank" rel="noreferrer" href="https://github.com/Real-Arthur/redux-feedback-loop">
           <Typography variant="h6">Feedback Forms<img className="icons" src={gitcat}/></Typography>
@@ -68,7 +58,6 @@ function Projects() {
         <Typography>Technologies: Javascript, React, Redux, Express, Node.js, PostgreSQL</Typography>
         <img style={{width: "400px", height: "300px"}} className="projectImage" src={feedback} />
         </Grid>
-
       </Grid>
     </Grid>
     </Grid>

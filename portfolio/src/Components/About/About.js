@@ -27,9 +27,8 @@ function About(props) {
         </Grid>
       </Grid>
       </Grid>
-
+      <hr />
       <Grid container direction="row" justify="space-around">
-      
       <Grid item>
         <Typography variant="h6">Catching A Flick</Typography>
         <img src={harrysally} />
@@ -37,8 +36,8 @@ function About(props) {
         <img src={pulpfiction} />
       </Grid>
       <Grid item>
-        <Typography variant="h6">Cheering my favorite soccers teams</Typography>
-        <Typography variant="h6"> Liverpool FC and Minnesota United</Typography>
+        <Typography variant="h6">Cheering on my favorite soccers teams</Typography>
+        <Typography variant="h6">Liverpool FC and Minnesota United</Typography>
         <img src={liverpool} />
         <img src={mnufc} />
       </Grid>
@@ -50,13 +49,11 @@ function About(props) {
         <img src={wheel13} /> 
       </Grid>
       </Grid>
-
       <Grid container justify="center">
        <Grid item>
       <Button href="#top" variant="outlined">Back to Top</Button>
       </Grid> 
       </Grid>
-
     </Grid>
   );
 }

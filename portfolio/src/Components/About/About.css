@@ -10,11 +10,11 @@ img.me {
 }
 
 .navArea {
-  background-color: #FFF1E6;
+  background-image: linear-gradient(#A8DADC, white);
 }
 
 .aboutMeArea {
-  background-color: #F0EFEB;
+  background-image: linear-gradient(0deg,#EAE2B7, white);
 }
 
 /* .mainArea {
@@ -24,4 +24,8 @@ img.me {
 .icons {
   height: 30px;
   width: auto;
+}
+
+hr {
+  background-origin: 1px solid red;
 }
