@@ -14,7 +14,7 @@ import resume from "../../Media/ArthurCarsonResume.pdf";
 function Home() {
   return (
       <Switch>
-      <Route exact path="/projects">
+      <Route exact path="/">
         <Typography variant="h4">Projects I've Been Working On:</Typography>
         <Projects />
       </Route>

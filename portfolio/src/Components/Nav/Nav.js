@@ -9,7 +9,7 @@ function NavRow(props) {
   return (
     <Grid className="navArea" container direction="row" justify="flex-end" alignItems="stretch">
       <Grid item>
-        <Link href="/projects"><Button variant="outlined" color="primary">Projects</Button></Link>
+        <Link href="/"><Button variant="outlined" color="primary">Projects</Button></Link>
       </Grid>   
       <Grid item>
       <Link href="/resume"><Button variant="outlined" color="primary">Resume</Button></Link>
